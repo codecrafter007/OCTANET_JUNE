@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Superbike Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" alt="Superbike Booking">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#bikes">Bikes</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Ride in Style. Book a Superbike Today.</h1>
+            <p>Experience the thrill of riding a superbike. Book your dream bike now.</p>
+            <a href="#booking" class="cta-button">Book Now</a>
+        </div>
+    </header>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-card">
+                <img src="service1.png" alt="Service 1">
+                <h3>Flexible Rental Options</h3>
+                <p>Rent a superbike for a few hours, a day, or even a week. Choose what suits you best.</p>
+            </div>
+            <div class="service-card">
+                <img src="service2.png" alt="Service 2">
+                <h3>Professional Instructors</h3>
+                <p>Get expert guidance from our experienced instructors to make the most of your superbike ride.</p>
+            </div>
+            <div class="service-card">
+                <img src="service3.png" alt="Service 3">
+                <h3>24/7 Customer Support</h3>
+                <p>Our dedicated support team is available round the clock to assist you with any queries or issues.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="bikes" class="dark-section">
+        <div class="container">
+            <h2>Choose Your Superbike</h2>
+            <div class="bike-card">
+                <img src="bike1.png" alt="Bike 1">
+                <h3>Yamaha R1</h3>
+                <p>Experience the power and precision of the legendary Yamaha R1 superbike.</p>
+            </div>
+            <div class="bike-card">
+                <img src="bike2.png" alt="Bike 2">
+                <h3>Ducati Panigale V4</h3>
+                <p>Feel the Italian craftsmanship and exhilarating performance of the Ducati Panigale V4.</p>
+            </div>
+            <div class="bike-card">
+                <img src="bike3.png" alt="Bike 3">
+                <h3>Kawasaki Ninja H2</h3>
+                <p>Ride the supercharged beast, the Kawasaki Ninja H2, for the ultimate adrenaline rush.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking">
+        <div class="container">
+            <h2>Book Your Superbike</h2>
+            <form>
+                <label for="bike">Select a Bike:</label>
+                <select id="bike" name="bike">
+                    <option value="yamaha">Yamaha R1</option>
+                    <option value="ducati">Ducati Panigale V4</option>
+                    <option value="kawasaki">Kawasaki Ninja H2</option>
+                </select>
+                <label for="date">Select a Date:</label>
+                <input type="date" id="date" name="date">
+                <label for="duration">Select Duration (in hours):</label>
+                <input type="number" id="duration" name="duration" min="1" max="24">
+                <button type="submit" class="cta-button">Confirm Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="dark-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have any questions? Feel free to get in touch with us.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Superbike Booking. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

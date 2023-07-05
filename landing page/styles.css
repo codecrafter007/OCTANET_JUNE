@@ -1,0 +1,239 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #090000f5;
+    color: #fff;
+    padding: 20px;
+}
+
+header img {
+    height: 60px;
+    margin-right: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: #ff9500;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url("hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffffe4;
+    padding: 200px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #ff9500;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #ffad33;
+}
+
+/* Services Section Styles */
+.services {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.service-card {
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    margin: 0 20px;
+    background-color: #ebdada00;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.service-card img {
+    width: 100px;
+    margin-bottom: 20px;
+    
+}
+
+/* Dark Section Styles */
+.dark-section {
+    background-color: #120202;
+    color: #fff;
+}
+
+/* Bike Selection Section Styles */
+.bike-selection {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.bike-card {
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    margin: 0 20px;
+    background-color: #0a0101;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.bike-card img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+/* Booking Section Styles */
+.booking {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.booking form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking form label {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.booking form select,
+.booking form input[type="date"],
+.booking form input[type="number"] {
+    padding: 10px;
+    margin-top: 10px;
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    padding: 80px 0;
+    text-align: center;
+}
+
+/* Contact Section Styles */
+.contact {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form label {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+    padding: 10px;
+    margin-top: 10px;
+    width: 300px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0e0101;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #100101;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    header img {
+        height: 30px;
+    }
+
+    .hero {
+        padding: 60px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .service-card,
+    .bike-card {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .bike-card img {
+        width: 150px;
+    }
+
+    .booking form select,
+    .booking form input[type="date"],
+    .booking form input[type="number"] {
+        width: 100%;
+    }
+
+    .contact form input[type="text"],
+    .contact form input[type="email"],
+    .contact form textarea {
+        width: 100%;
+    }
+}
